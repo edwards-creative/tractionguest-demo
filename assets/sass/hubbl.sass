@@ -1,0 +1,86 @@
+
+// IMPORT DOCUMENT SASS FILES,
+// SEPERATED FOR ORGANIZATION
+
+// Normalize
+@import 'includes/normalize'
+
+// Fonts, mixins, variables, etc
+@import 'includes/functions'
+@import 'includes/mixins'
+@import 'includes/fonts'
+@import 'includes/variables'
+@import 'includes/typography'
+@import 'includes/extend'
+@import 'includes/layout'
+
+// BASE STYLES FOR
+// GENERAL BRAND ELEMENTS
+
+body
+    background: $color-canvas
+    font-family: sans-serif
+    box-sizing: border-box
+
+h1, h2, h3, h4, h5
+    color: $color-white
+    font-family: $font-brand
+
+p
+    color: $color-base
+    font-family: 'Arial', sans-serif
+
+
+// INTRODUCTORY
+.introductory--background-image
+    background: url('../img/header-background-min.png') bottom center no-repeat
+    background-size: cover
+    min-height: 100%
+    margin: 0 auto
+
+
+// NAV MENU
+.introductory--nav-menu
+    display: flex
+    flex-direction: row
+    margin-bottom: 8rem
+    padding-top: 1.8rem
+    justify-content: space-between
+    .nav-menu--brand
+        align-self: flex-start
+    .nav-menu--button
+        align-self: flex-end
+
+.introductory--post
+    @extend %article-common
+    font-family: 'Arial'
+    font-weight: 100
+    h1
+        font-size: 4rem
+        line-height: 4.6rem
+        margin: 0
+        padding: 0
+    p
+        color: $color-base
+        font-size: 1.4rem
+        line-height: 2.1rem
+
+.introductory--post-image
+    float: right
+    display: inline-block
+
+.button
+    @extend %button-common
+
+
+
+.nav-menu--button
+    background: $color-brand
+
+.introductory--button-primary
+    background: $color-brand-accent
+    border: 2px solid $color-brand-accent
+
+.introductory--button-secondary
+    @extend %space-left
+    border: 2px solid white
