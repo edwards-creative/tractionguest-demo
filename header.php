@@ -13,7 +13,7 @@
 
     <body <?php body_class(array('hubble-brand')); ?>>
 
-    <section id="introductory" class="introductory__background--image block">
+    <section id="introductory" class="introductory__background--image ">
 
         <div class="container">
             <!--START NAV BAR -->

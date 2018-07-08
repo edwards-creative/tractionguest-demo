@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <!-- START BENEFITS SECTION -->
-    <section id="benefits" class="block">
+    <section id="benefits" class="block accordion">
         <!-- START BENEFITS SECTION -->
         <div class="container">
         <article class="benefits__article">
