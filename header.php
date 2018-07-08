@@ -13,38 +13,44 @@
 
     <body <?php body_class(array('hubble-brand')); ?>>
 
-    <header id="introductory" class="introductory--background-image ">
+    <section id="introductory" class="introductory__background--image block">
 
         <div class="container">
-            <nav class="introductory--nav-menu">
-                <a class="nav-menu--brand" href="<?php echo esc_url( home_url( '/' )); ?>"> <img src="
+            <!--START NAV BAR -->
+            <nav class="introductory__nav--menu">
+                <a class="nav__menu--brand" href="<?php echo esc_url( home_url( '/' )); ?>"> <img src="
                     <?php bloginfo('stylesheet_directory'); ?>/assets/img/hubbl-logo.png" width="124">
                 </a>
-                <a class="button nav-menu--button" href="#" role="button">Buy Now</a>
-            </nav>
+                <ul class="nav__list">
+                    <li class="nav__list--item"><a href="#" role="button"></a>Link 1</li>
+                    <li class="nav__list--item"><a href="#" role="button"></a>Link 1</li>
+                    <li class="nav__list--item"><a href="#" role="button"></a>Link 1</li>
+                </ul>
+                <a class="button nav__menu--button" href="#" role="button">Buy Now</a>
+            </nav><!--END NAV BAR -->
 
-            <article class="introductory--post">
-                <?php
-                    if(have_posts()):
+            <!--START PRODUCT INTRODUCTORY -->
+            <article class="introductory__post">
+                <header class="introductory__post--article">
+
+                    <?php
+                        if(have_posts()):
 
                         while(have_posts() ): the_post(); ?>
+
                             <h1><?php the_title(); ?> </h1>
-                            <p class="introductory--post-paragraph"> <?php the_content(); ?> </p>
+                            <p><?php the_content(); ?> </p>
 
                         <?php endwhile;
-                    endif; ?>
+                        endif; ?>
 
-                    <a class="button introductory--button-primary" href="#" role="button">Discover the Benefits</a>
-                    <a class="button introductory--button-secondary" href="#" role="button">Contact Us</a>
-            </article>
+                    <a class="button introductory__button--primary" href="#" role="button">Discover the Benefits</a>
+                    <a class="button introductory__button--secondary" href="#" role="button">Contact Us</a>
+                </header>
 
                 <aside class="introductory--post-image">
                     <?php the_post_thumbnail(); ?>
                 </aside>
-
-
+            </article><!--START PRODUCT INTRODUCTORY -->
         </div>
-    </header>
-
-        <!-- <?php wp_nav_menu(array('theme_location'=>'primary')); ?> -->
-        <!-- <?php wp_nav_menu(array('theme_location'=>'secondary')); ?> -->
+    </section>

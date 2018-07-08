@@ -15,7 +15,6 @@ function hubbl_script_enqueue() {
     //JQUERY—WORDPRESS BUILT-IN
     wp_enqueue_script('jquery', true);
 }
-
 add_action('wp_enqueue_scripts', 'hubbl_script_enqueue');
 
 /*
@@ -24,11 +23,15 @@ add_action('wp_enqueue_scripts', 'hubbl_script_enqueue');
 ******************************
 */
 
-function custom_add_google_fonts() {
+
+function custom_fonts() {
+    //GOOGLE FONTS
     wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700', false );
+    //FONT AWESOME
+    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.1.0/css/all.css', false );
 }
 
-add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
+add_action( 'wp_enqueue_scripts', 'custom_fonts' );
 
 /*
 ******************************
@@ -36,7 +39,6 @@ add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
 ******************************
 */
 function hubbl_setup() {
-
     add_theme_support('menus');
     add_theme_support( 'post-thumbnails' );
 }
