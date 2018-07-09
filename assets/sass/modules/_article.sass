@@ -25,6 +25,27 @@
 .article__header--dark
     color: $color-canvas-dark
 
+
+//MEDIA QUERIES
+/* For mobile phones: */
+@media only screen and (max-width: 1069px)
+    .intro__section--main
+        justify-content: space-around
+        .intro__main--header
+            max-width: 40%
+
+@media only screen and (max-width: 850px)
+    .intro__section--main
+        justify-content: center
+        flex-flow: column-reverse wrap
+        .intro__main--header
+            max-width: 100%
+            text-align: center
+        .intro__article--aside
+            align-self: center
+
+
+
 //ENDORSEMENTS
 .endorsements__list
     display: flex
@@ -102,3 +123,39 @@
         background: url('../img/lightning-fast-min.png')
     .solar-power
         background: url('../img/solar-powered-min.png')
+
+@media only screen and (max-width: 757px)
+    .features__article--image
+        display: none
+
+//FORM
+#contact-form
+    padding-top: 2rem
+.contact-form
+    width: 450px
+    margin: 0 auto 4rem auto
+    display: block
+    position: relative
+    box-sizing: border-box
+    clear: both
+
+    textarea
+        resize: none
+
+    input, textarea
+        font-size: 1rem
+        color: $color-white
+        width: 100%
+        padding: .7rem
+        margin: .3rem
+        background: darken($color-base-subtle, 2%)
+        border: none
+        &:focus
+            outline: none
+            border-right: 2px solid $color-brand-accent
+
+@media (max-width: 859px)
+    .contact-form
+        width: 100%
+        display: block
+        position: relative

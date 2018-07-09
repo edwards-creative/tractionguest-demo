@@ -108,8 +108,6 @@
 
 
 
-
-
 <section id="pricing">
     <!-- START PRICING SECTION -->
     <div class="wrapper">
@@ -117,9 +115,17 @@
     </div><!-- SECTION wrapper -->
 </section><!-- END ENDORSEMENTS SECTION -->
 
-
-
-
+<section id="contact-form">
+    <header class="article__header--light">
+        <h2>The Most Advanced Data Storage Device</h2>
+    </header>
+    <form class="contact-form float-right clearfix" action="#">
+        <input type="text" value="" placeholder="Name">
+        <input type="text" value="" placeholder="Email">
+        <textarea name="name" rows="8" cols="50" placeholder="Message"></textarea>
+        <button class="button button--primary">Submit</button>
+    </form>
+</section>
 
 
 

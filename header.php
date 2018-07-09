@@ -12,14 +12,15 @@
     </head>
 
     <body <?php body_class(array('hubble-brand')); ?>>
-    <div class="wrapper">
-        <section id="intro__section" class="introductory__header--image">
+    <div class="introductory__header--image">
+        <section id="intro__section" class=" wrapper">
             <header class="site__header">
 
                 <nav class="intro__section--navbar">
                     <a class="intro__navbar--brand" href="<?php echo esc_url( home_url( '/' )); ?>">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/hubbl-logo.png" width="124">
                     </a>
+
                     <ul class="intro__navbar--list">
                         <li><a href="#">Pricing</a> </li>
                         <li><a href="#">Features</a> </li>
