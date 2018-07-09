@@ -19,7 +19,6 @@
         max-width: 100%
         height: auto
 
-
 .article__header--light
     color: $color-white
 
@@ -38,9 +37,12 @@
 .benefits__article
     padding: .5rem 0 1.5rem 0
 .benefits__list--card
+    cursor: pointer
     background: $color-base-subtle
     border-radius: 4px
     margin: 1rem
+    &:hover
+        background: lighten($color-base-subtle, 15%)
 .benefits__list
     display: flex
     justify-content: space-around
@@ -54,6 +56,7 @@
         color: $color-white
     p
         color: $color-white
+        line-height: 1.5rem
     .benefits__list--item
         padding: 1.2rem 1rem
         text-align: center
@@ -68,3 +71,34 @@
             height: 90px
             background: $color-brand-accent
             border-radius: 50px
+
+//FEATURES
+.features__article
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    align-items: center
+    max-width: 100%
+    .features__article--list
+    .features__article--header
+        justify-content: flex-start
+        max-width: 60%
+        p
+            line-height: 1.5rem
+        .features__list--item
+            i
+                color: $color-brand
+                margin-right: .6rem
+    .features__article--image
+        background-position: center center no-repeat
+        background-repeat: no-repeat
+        background-size: cover
+        width: 275px
+        height: 275px
+        max-width: 100%
+    .portable
+        background: url('../img/portable-min.png')
+    .light-speed
+        background: url('../img/lightning-fast-min.png')
+    .solar-power
+        background: url('../img/solar-powered-min.png')
