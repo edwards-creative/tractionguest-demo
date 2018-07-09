@@ -30,10 +30,10 @@
         <div class="wrapper">
         <article class="benefits__article">
             <header class="article__header--light">
-                <h2>The Most Advanced Data Storage Device</h2>
+                <h2 id="benefits-section">The Most Advanced Data Storage Device</h2>
             </header>
             <ul class="benefits__list">
-            <div id="card" class="benefits__list--card">
+            <div id="card" class="benefits__list--card portable-card">
                 <li class="benefits__list--item">
                     <h4>Completely Portable</h4>
                     <i class="fas fa-wallet"></i>
@@ -42,7 +42,7 @@
                 </li>
             </div>
             <div class="benefits__list--card">
-                <li class="benefits__list--item">
+                <li class="benefits__list--item lightning-card">
                     <h4>Lightning Fast Transfers</h4>
                     <i class="fas fa-bolt"></i>
                     <p>Transfer data instantly with our patented light-speed technology.</p>
@@ -50,7 +50,7 @@
                 </li>
             </div>
             <div class="benefits__list--card">
-                <li class="benefits__list--item">
+                <li class="benefits__list--item solar-card">
                     <h4>Solar Charged</h4>
                     <i class="fas fa-sun"></i>
                     <p>Harness the power of the sun to charge within minutes.</p>
@@ -69,7 +69,7 @@
         <span class="features__article--image portable">
         </span>
         <!-- PORTABLE FEATURE -->
-        <div class="features__article--header">
+        <div id="portable-feature" class="features__article--header">
             <h3 class="article__header--light">Data In Your Pocket</h3>
             <p>Since HUBBL's the same size as a normal credit card, you'll  be able to take your data with you wherever you go.</p>
             <div class="features__list--item">
@@ -77,9 +77,9 @@
                 <p><i class="fas fa-check"></i>Fits in your Pocket</p>
             </div>
         </div>
-        <!-- LIGHTNING FAST FEATURE -->
 
-        <div class="features__article--header">
+        <!-- LIGHTNING FAST FEATURE -->
+        <div id="lightning-feature" class="features__article--header">
             <h3 class="article__header--light">Transfer At Light Speed</h3>
             <p>HUBBL makes it easy to transfer data over the cloud, beyond that, transfers happen almost instantaneously. No more waiting.</p>
             <div class="features__list--item">
@@ -90,7 +90,7 @@
         <span class="features__article--image light-speed">
         </span>
         <!-- SOLAR POWERED -->
-        <span class="features__article--image solar-power">
+        <span id="solar-feature" class="features__article--image solar-power">
         </span>
         <div class="features__article--header">
             <h3 class="article__header--light">Transfer At Light Speed</h3>
@@ -105,25 +105,18 @@
     </div><!-- SECTION wrapper -->
 </section>
 
+<?php // TODO: ADD PRICING SECTION ?>
 
-
-
-<section id="pricing">
-    <!-- START PRICING SECTION -->
-    <div class="wrapper">
-
-    </div><!-- SECTION wrapper -->
-</section><!-- END ENDORSEMENTS SECTION -->
 
 <section id="contact-form">
     <header class="article__header--light">
-        <h2>The Most Advanced Data Storage Device</h2>
+        <h2>Get In Touch To Learn More</h2>
     </header>
-    <form class="contact-form float-right clearfix" action="#">
-        <input type="text" value="" placeholder="Name">
-        <input type="text" value="" placeholder="Email">
-        <textarea name="name" rows="8" cols="50" placeholder="Message"></textarea>
-        <button class="button button--primary">Submit</button>
+    <form name="contact-form" method="post" class="contact-form" action="thank_you.php">
+        <input name="name" type="text" placeholder="Name *" required>
+        <input name="email" type="text" value="" placeholder="Email *" required>
+        <textarea name="message" rows="8" cols="50" placeholder="Message"></textarea>
+            <input type="submit" class="button button--primary"></input>
     </form>
 </section>
 

@@ -13,9 +13,7 @@ function hubbl_script_enqueue() {
     //DOCUMENT
     wp_enqueue_script('custom_script', get_template_directory_uri().'/assets/js/hubbl.js', array(), '1.0.0', true);
     //JQUERY—WORDPRESS BUILT-IN
-    wp_enqueue_script('jquery', true);
-    //JQUERY FLIP — Required for Card Flip
-    wp_enqueue_script('js_flip', 'https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js', true);
+    wp_enqueue_script('jquery');
 }
 add_action('wp_enqueue_scripts', 'hubbl_script_enqueue');
 

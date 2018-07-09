@@ -12,9 +12,9 @@
             <div class="footer__social">
                     <h4>Let's connect</h4>
                 <ul class="footer__social--list">
-                    <li class="social__list ldin"><a href="#"></a> </li>
-                    <li class="social__list git"><a href="#"></a> </li>
-                    <li class="social__list tw"><a href="#"></a> </li>
+                    <li class="social__list ldin"><a href="https://www.linkedin.com/in/jonathan-edwards-96921648" target="_blank"></a> </li>
+                    <li class="social__list git"><a href="https://github.com/edwards-creative/tractionguest-demo" target="_blank"></a> </li>
+                    <li class="social__list tw"><a href="#" target="_blank"></a> </li>
                 </ul>
             </div>
         </nav>

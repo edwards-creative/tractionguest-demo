@@ -16,18 +16,19 @@
         <section id="intro__section" class=" wrapper">
             <header class="site__header">
 
-                <nav class="intro__section--navbar">
+                <nav id="header__nav--fixed" class="intro__section--navbar">
                     <a class="intro__navbar--brand" href="<?php echo esc_url( home_url( '/' )); ?>">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/hubbl-logo.png" width="124">
                     </a>
 
                     <ul class="intro__navbar--list">
-                        <li><a href="#">Pricing</a> </li>
-                        <li><a href="#">Features</a> </li>
-                        <li><a href="#">Testimonials</a> </li>
+                        <li class="navbar__list--items about-link"><span>About</span> </li>
+                        <li class="navbar__list--items benefits-link"><span>Why HUBBL?</span> </li>
+                        <li class="navbar__list--items contact-us"><span>Contact Us</span> </li>
+
                     </ul>
-                    <a class="button intro__navbar--button float-right" href="#" role="button">Contact Us</a>
                 </nav>
+
             </header>
 
             <main class="intro__section--main">
@@ -37,14 +38,14 @@
 
                     while(have_posts() ): the_post(); ?>
 
-                        <h1><?php the_title(); ?> </h1>
+                        <h1 id="about"><?php the_title(); ?> </h1>
                         <p><?php the_content(); ?> </p>
 
                       <?php endwhile;
                     endif; ?>
 
-                    <a class="button button--secondary" href="#" role="button">Benefits</a>
-                    <a class="button button--primary" href="#" role="button">Purchase HUBBL</a>
+                    <a class="button button--secondary benefits-button" role="button">Benefits</a>
+                    <a class="purchase-button button button--primary" role="button">Purchase HUBBL</a>
                 </header>
                 <aside class="intro__article--aside">
                     <?php the_post_thumbnail(); ?>

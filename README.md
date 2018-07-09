@@ -1,8 +1,9 @@
-#tractionguest-demo
+//tractionguest-demo
 Developer Demo for Traction Guest
 
-#Team
+//Team
 Jonathan Edwards, Web Designer & Developer, jonathan@edwards-creative.com
+________________________________________________________________________________
 
-#Run
+//TODO:
 To run you'll need to install MAMP PHP/MySQL Server
