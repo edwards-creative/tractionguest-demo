@@ -12,45 +12,44 @@
     </head>
 
     <body <?php body_class(array('hubble-brand')); ?>>
+    <div class="wrapper">
+        <section id="intro__section" class="introductory__header--image">
+            <header class="site__header">
 
-    <section id="introductory" class="introductory__background--image ">
+                <nav class="intro__section--navbar">
+                    <a class="intro__navbar--brand" href="<?php echo esc_url( home_url( '/' )); ?>">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/hubbl-logo.png" width="124">
+                    </a>
+                    <ul class="intro__navbar--list">
+                        <li><a href="#">Pricing</a> </li>
+                        <li><a href="#">Features</a> </li>
+                        <li><a href="#">Testimonials</a> </li>
+                    </ul>
+                    <a class="button intro__navbar--button float-right" href="#" role="button">Contact Us</a>
+                </nav>
+            </header>
 
-        <div class="container">
-            <!--START NAV BAR -->
-            <nav class="introductory__nav--menu">
-                <a class="nav__menu--brand" href="<?php echo esc_url( home_url( '/' )); ?>"> <img src="
-                    <?php bloginfo('stylesheet_directory'); ?>/assets/img/hubbl-logo.png" width="124">
-                </a>
-                <ul class="nav__list">
-                    <li class="nav__list--item"><a href="#" role="button"></a>Link 1</li>
-                    <li class="nav__list--item"><a href="#" role="button"></a>Link 1</li>
-                    <li class="nav__list--item"><a href="#" role="button"></a>Link 1</li>
-                </ul>
-                <a class="button nav__menu--button" href="#" role="button">Buy Now</a>
-            </nav><!--END NAV BAR -->
-
-            <!--START PRODUCT INTRODUCTORY -->
-            <article class="introductory__post">
-                <header class="introductory__post--article">
-
+            <main class="intro__section--main">
+                <header class="intro__main--header">
                     <?php
-                        if(have_posts()):
+                    if(have_posts()):
 
-                        while(have_posts() ): the_post(); ?>
+                    while(have_posts() ): the_post(); ?>
 
-                            <h1><?php the_title(); ?> </h1>
-                            <p><?php the_content(); ?> </p>
+                        <h1><?php the_title(); ?> </h1>
+                        <p><?php the_content(); ?> </p>
 
-                        <?php endwhile;
-                        endif; ?>
+                      <?php endwhile;
+                    endif; ?>
 
-                    <a class="button introductory__button--primary" href="#" role="button">Discover the Benefits</a>
-                    <a class="button introductory__button--secondary" href="#" role="button">Contact Us</a>
+                    <a class="button button--secondary" href="#" role="button">Benefits</a>
+                    <a class="button button--primary" href="#" role="button">Purchase HUBBL</a>
                 </header>
-
-                <aside class="introductory--post-image">
+                <aside class="intro__article--aside">
                     <?php the_post_thumbnail(); ?>
                 </aside>
-            </article><!--START PRODUCT INTRODUCTORY -->
-        </div>
+            </main>
+    </div>
+
+
     </section>

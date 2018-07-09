@@ -1,0 +1,47 @@
+// CLASSES, EXTENDS & MIXINS FOR COMMON PAGE ELEMENTS, BUTTONS, FORMS, ETC.
+
+// EXTENDS
+// Common Button Properties
+%button--common
+    font-size: .8rem
+    color: $color-white
+    font-weight: $font-weight-bold
+    margin: .8rem 0
+    letter-spacing: .1rem
+    text-transform: uppercase
+    padding: .6rem 1rem .5rem 1rem
+    border-radius: 4px
+    text-decoration: none
+    display: inline-block
+    transition: all .2s ease-in-out
+
+%article-header
+    letter-spacing: 1px
+%space-left
+    margin-left: 25px
+
+.button
+    @extend %button--common
+    box-shadow: 0px 4px 0px $hover-brand-accent
+
+.button--primary
+    background: $color-brand
+    box-shadow: 0px 4px 0 $hover-brand
+    &:hover
+        background: $color-brand
+        transform: translateY(2px)
+        box-shadow: 0px 2px 0 $hover-brand
+
+.button--secondary
+    background: $color-base
+    box-shadow: 0px 4px 0 $hover-color-base
+    &:hover
+        background: $hover-color-base
+        transform: translateY(2px)
+        box-shadow: 0px 2px 0 $hover-color-base
+
+.padding-left
+    padding-left: 1rem
+
+.background-light
+    background: darken(white, 5%)
