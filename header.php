@@ -24,7 +24,7 @@
                     <ul class="intro__navbar--list">
                         <li class="navbar__list--items about-link"><span>About</span> </li>
                         <li class="navbar__list--items benefits-link"><span>Why HUBBL?</span> </li>
-                        <li class="navbar__list--items contact-us"><span>Contact Us</span> </li>
+                        <li class="navbar__list--items contact-us"><span>Contact</span> </li>
 
                     </ul>
                 </nav>

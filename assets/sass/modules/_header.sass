@@ -5,29 +5,29 @@
     justify-content: space-between
     align-items: center
     flex-flow: row wrap
-    margin-top: 1.5625rem
+    padding-top: 2rem
     margin-bottom: 6rem
-    .intro__navbar--button
-        background: $color-brand-accent
-        box-shadow: 0px 4px 0px $hover-brand-accent
-        &:hover
-            background: $hover-brand-accent
-            transform: translateY(2px)
-            box-shadow: 0px 2px 0px $hover-brand-accent
     .intro__navbar--list
-        li
+        .navbar__list--items
             display: inline
             span
                 cursor: pointer
                 text-decoration: none
-                color: $color-base
+                color: $color-white
                 padding-bottom: .3rem
                 transition: all .2s ease-in-out
                 &:hover
-                    color: $color-white
+                    color: $color-base
                     border-bottom: 2px solid $color-brand-accent
             &:nth-of-type(1n+2)
                 padding-left: 2rem
+
+.introductory__header--image
+    background: url('../img/hubble-bg-min.png') bottom center no-repeat
+    background-size: cover
+    width: 100%s
+    max-width: 100%
+    box-sizing: border-box
 
 
 //MEDIA QUERIES
